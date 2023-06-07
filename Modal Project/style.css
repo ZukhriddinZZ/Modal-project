@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1682377521566-f70ac8abe597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.default_box {
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.653);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.modal_btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: orangered;
+  border: 2px solid orangered;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.modal_btn:hover {
+  background-color: transparent;
+  color: orangered;
+}
+
+.modal_container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 68, 0, 0.41);
+  position: absolute;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+
+.visibleM {
+visibility: visible;
+  z-index: 999999999;
+}
+
+.modal_content {
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.x {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  color: red;
+  background: none;
+  border: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.x:hover {
+  transform: scale(1.3);
+}
